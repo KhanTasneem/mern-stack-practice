@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact Form</title>
+    <meta title="description" content="Contact form with input validation" />
+</head>
+
+<body>
+    <!-- A straightforward contact form with four fields—name, email, Phone and
+message—and a single send button 
+Implements HTML5 validation using required, maxlength, pattern="[0-9] {10}", and title attributes to ensure proper user input and provide helpful error messages.
+-->
+    <form action="../visiting-card/index.html">
+        <h1>Contact Form</h1>
+        <label for="name">Name:</label><br/>
+        <input name="name" id="name" placeholder="Your name" maxlength="15" required/><br/><br/>
+        <label for="email">Email:</label><br/>
+        <input name="email" type="email" id="email" placeholder="Your email" maxlength="25" required/><br/><br/>
+        <label for="phone">Phone:</label><br/>
+        <input name="phone" type="tel" id="phone" placeholder="Your phone" required pattern="[0-9]{10}" title="Phone number must be exactly 10 digits (e.g., 9876543210)"/><br/><br/>
+        <label for="message">Message:</label><br/>
+        <textarea name="message" id="message" placeholder="Write your message here..." required rows="5" maxlength="50"></textarea><br/><br/>
+        <hr />
+        <button type="submit">Send Message</button>
+    </form>
+</body>
+
+</html>
