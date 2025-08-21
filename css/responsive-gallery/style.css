@@ -1,3 +1,12 @@
+body{
+    margin: 0;
+}
+section{
+    margin: 10%;
+}
+section > h2{
+    text-align: center;
+}
 #gallery-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -26,7 +35,7 @@
     padding: 15px;
     /* flex-grow: 1; */
     text-align: center;
-    border-top: 1px dashed;
+    border-top: 1px dotted;
 }
 @media (max-width: 768px) { 
      #gallery-container {
